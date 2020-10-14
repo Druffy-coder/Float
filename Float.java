@@ -13,5 +13,10 @@ public class Float
         intFract();
     }
 
-    
+    private void intFract() {
+        myInteger = (long)(this.mantissa / Math.pow(10, this.exponent));
+        myFraction = (long)(this.mantissa % Math.pow(10, this.exponent));
+    }
+
+
 }
