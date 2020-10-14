@@ -79,4 +79,12 @@ public class Float
         out(b, numzero, resultInteger, resultFraction);
     }
 
+    public void out(Float b, int numzero, long resultInteger, long resultFraction) {
+        System.out.print(resultInteger + ".");
+        for (int i = 0 ; i < numzero ; i++) {
+            System.out.print("0");
+        }
+        System.out.println(resultFraction);
+    }
+
 }
